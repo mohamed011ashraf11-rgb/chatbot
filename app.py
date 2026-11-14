@@ -2,7 +2,7 @@ import streamlit as st
 from google import genai
 
 API_KEY = "AQ.Ab8RN6L7DDyN3dk5POc9Xbr7tMS7svjInDC5O1KSrN3AzdXAoA"
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-2.5-flash"
 
 USERS = {
     "admin": "1234",
@@ -145,7 +145,7 @@ if "logged_in" not in st.session_state:
 
 
 def ask_gemini(messages):
-    client = genai.Client(api_key=API_KEY)
+    client = genai.Client(vertexai=True, api_key=API_KEY)
 
     contents = []
     for m in messages:
