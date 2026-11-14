@@ -1,7 +1,7 @@
 import streamlit as st
 from google import genai
 
-API_KEY = "AQ.Ab8RN6L7DDyN3dk5POc9Xbr7tMS7svjInDC5O1KSrN3AzdXAoA"
+API_KEY = "g"
 MODEL = "gemini-2.5-flash"
 
 USERS = {
